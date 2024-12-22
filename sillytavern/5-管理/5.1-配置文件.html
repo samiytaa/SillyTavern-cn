@@ -1,0 +1,522 @@
+<!DOCTYPE html> <html><head>
+		<title>5.1 配置文件</title>
+		<base href="..\../">
+		<meta id="root-path" root-path="..\../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="SillyTavern - 5.1 配置文件">
+		<meta property="og:title" content="5.1 配置文件">
+		<meta property="og:description" content="SillyTavern - 5.1 配置文件">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://samiytaa.github.io/sillytavern/5-管理/5.1-配置文件.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="SillyTavern">
+		<meta name="author" content="samiytaa"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.ico"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="stylesheet" href="lib/styles/theme.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript></head><body class="publish css-settings-manager theme-light show-inline-title show-ribbon"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><pre class="frontmatter language-yaml" tabindex="0" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">title</span><span class="token punctuation">:</span> 配置文件</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="配置文件">配置文件</h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="warning" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></div><div class="callout-title-inner">声明</div></div><div class="callout-content">
+<p dir="auto">本文档可能已经过时、不完整或不准确。请参考您安装目录中的 <a data-tooltip-position="top" aria-label="https://github.com/SillyTavern/SillyTavern/blob/release/default/config.yaml" rel="noopener nofollow" class="external-link" href="https://github.com/SillyTavern/SillyTavern/blob/release/default/config.yaml" target="_blank">默认 config.yaml</a> 文件，以获取最新的设置列表。</p>
+</div></div></div><div class="el-p"><p dir="auto"><code>config.yaml</code> 是 SillyTavern 服务器的主要配置文件，您可以在安装完成后在根目录中找到该文件。它是一个 YAML 文件，包含各种设置，如网络设置、安全设置和后端特定选项。<strong>对该文件所做的更改将在重启服务器后生效</strong>。</p></div><div class="el-p"><p dir="auto">当上游版本添加了新设置时，您可以在运行 <code>npm install</code>（或专门运行 <code>post-install.js</code> 脚本）以更新仓库后，默认值会自动填充。然后，您可以根据需要修改这些设置。</p></div><div class="el-p"><p dir="auto">对于嵌套设置，使用点表示法来指示层级。例如，<code>protocol.ipv6: false</code> 表示 <code>protocol</code> 部分下的 <code>ipv6</code> 设置，值为 <code>false</code>。</p></div><div class="el-pre"><pre class="language-yaml" tabindex="0"><code data-line="0" class="language-yaml is-loaded"><span class="token key atrule">protocol</span><span class="token punctuation">:</span>
+  <span class="token key atrule">ipv6</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-h2 heading-wrapper"><h2 data-heading="数据配置" dir="auto" class="heading" id="数据配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>数据配置</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>dataRoot</code></td>
+<td dir="ltr">用户数据存储的根目录</td>
+<td dir="ltr"><code>./data</code></td>
+<td dir="ltr">任何有效的目录路径</td>
+</tr>
+<tr>
+<td dir="ltr"><code>cardsCacheCapacity</code></td>
+<td dir="ltr">已解析角色卡片所占用的最大内存量（MB）</td>
+<td dir="auto">100</td>
+<td dir="ltr">任何正整数</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="[[5.4 远程连接|网络配置]]" dir="auto" class="heading" id="[[5.4_远程连接|网络配置]]"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="5.4 远程连接" data-href="5.4 远程连接" href="sillytavern/5-管理/5.4-远程连接.html" class="internal-link" target="_self" rel="noopener nofollow">网络配置</a></h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>listen</code></td>
+<td dir="ltr">启用监听传入连接</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>port</code></td>
+<td dir="ltr">服务器监听端口</td>
+<td dir="auto"><code>8000</code></td>
+<td dir="ltr">任何有效的端口号（1-65535）</td>
+</tr>
+<tr>
+<td dir="ltr"><code>protocol.ipv4</code></td>
+<td dir="ltr">启用 IPv4 协议监听</td>
+<td dir="ltr"><code>true</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>protocol.ipv6</code></td>
+<td dir="ltr">启用 IPv6 协议监听</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>dnsPreferIPv6</code></td>
+<td dir="ltr">优先使用 IPv6 进行 DNS 解析</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="安全配置" dir="auto" class="heading" id="安全配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>安全配置</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>whitelistMode</code></td>
+<td dir="ltr">启用 IP 白名单过滤</td>
+<td dir="ltr"><code>true</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>enableForwardedWhitelist</code></td>
+<td dir="ltr">检查转发头中的白名单 IP</td>
+<td dir="ltr"><code>true</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>whitelist</code></td>
+<td dir="ltr">允许的 IP 地址列表</td>
+<td dir="auto"><code>["::1", "127.0.0.1"]</code></td>
+<td dir="ltr">有效的 IP 地址数组</td>
+</tr>
+<tr>
+<td dir="ltr"><code>enableCorsProxy</code></td>
+<td dir="ltr">启用 CORS 代理中间件</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>allowKeysExposure</code></td>
+<td dir="ltr">允许在 UI 中暴露 API 密钥</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>disableCsrfProtection</code></td>
+<td dir="ltr">禁用 CSRF 保护（不推荐）</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>securityOverride</code></td>
+<td dir="ltr">禁用启动时的安全检查（不推荐）</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="auto"></td>
+<td dir="auto"></td>
+<td dir="auto"></td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="auto"></td>
+<td dir="auto"></td>
+<td dir="auto"></td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="[[5.2 多用户模式|用户认证]]" dir="auto" class="heading" id="[[5.2_多用户模式|用户认证]]"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="5.2 多用户模式" data-href="5.2 多用户模式" href="sillytavern/5-管理/5.2-多用户模式.html" class="internal-link" target="_self" rel="noopener nofollow">用户认证</a></h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>basicAuthMode</code></td>
+<td dir="ltr">启用基本认证</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>basicAuthUser.username</code></td>
+<td dir="ltr">基本认证用户名</td>
+<td dir="ltr"><code>"user"</code></td>
+<td dir="ltr">任何字符串</td>
+</tr>
+<tr>
+<td dir="ltr"><code>basicAuthUser.password</code></td>
+<td dir="ltr">基本认证密码</td>
+<td dir="ltr"><code>"password"</code></td>
+<td dir="ltr">任何字符串</td>
+</tr>
+<tr>
+<td dir="ltr"><code>enableUserAccounts</code></td>
+<td dir="ltr">启用多用户模式</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>enableDiscreetLogin</code></td>
+<td dir="ltr">在登录页面隐藏用户列表</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>sessionTimeout</code></td>
+<td dir="ltr">用户会话超时时间（秒）</td>
+<td dir="ltr"><code>86400</code>（24 小时）</td>
+<td dir="ltr">任何数字（-1 表示禁用，0 表示浏览器关闭，&gt;0 表示超时）</td>
+</tr>
+<tr>
+<td dir="ltr"><code>cookieSecret</code></td>
+<td dir="ltr">签署会话 cookie 的密钥</td>
+<td dir="ltr"><code>''</code>（自动生成）</td>
+<td dir="ltr">任何字符串</td>
+</tr>
+<tr>
+<td dir="ltr"><code>autheliaAuth</code></td>
+<td dir="ltr">启用基于 Authelia 的自动登录。参见：<a data-tooltip-position="top" aria-label="5.3 单点登录 (SSO)" data-href="5.3 单点登录 (SSO)" href="sillytavern/5-管理/5.3-单点登录-(sso).html" class="internal-link" target="_self" rel="noopener nofollow">SSO</a></td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>perUserBasicAuth</code></td>
+<td dir="ltr">使用账户凭据进行基本认证</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="请求代理配置" dir="auto" class="heading" id="请求代理配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>请求代理配置</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>requestProxy.enabled</code></td>
+<td dir="ltr">启用请求的代理</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>requestProxy.url</code></td>
+<td dir="ltr">代理服务器 URL</td>
+<td dir="ltr"><code>null</code></td>
+<td dir="ltr">有效的代理 URL（例如：<code>"socks5://username:password@example.com:1080"</code>）</td>
+</tr>
+<tr>
+<td dir="ltr"><code>requestProxy.bypass</code></td>
+<td dir="ltr">要绕过代理的主机</td>
+<td dir="ltr"><code>["localhost", "127.0.0.1"]</code></td>
+<td dir="ltr">主机名/IP 地址数组</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="自动运行配置" dir="auto" class="heading" id="自动运行配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>自动运行配置</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>autorun</code></td>
+<td dir="ltr">启动时自动打开浏览器</td>
+<td dir="ltr"><code>true</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>autorunHostname</code></td>
+<td dir="ltr">启动时打开浏览器时使用的主机名</td>
+<td dir="ltr"><code>"auto"</code></td>
+<td dir="ltr"><code>"auto"</code>，任何有效的主机名（例如：<code>"localhost"</code>，<code>"st.example.com"</code>）</td>
+</tr>
+<tr>
+<td dir="ltr"><code>autorunPortOverride</code></td>
+<td dir="ltr">浏览器自动运行时覆盖的端口</td>
+<td dir="auto"><code>-1</code></td>
+<td dir="ltr"><code>-1</code>（使用服务器端口），任何有效的端口号</td>
+</tr>
+<tr>
+<td dir="ltr"><code>avoidLocalhost</code></td>
+<td dir="ltr">避免在自动运行时使用“localhost”</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="高级配置" dir="auto" class="heading" id="高级配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>高级配置</h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>disableThumbnails</code></td>
+<td dir="ltr">禁用缩略图生成</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>thumbnailsQuality</code></td>
+<td dir="ltr">JPEG 缩略图质量</td>
+<td dir="auto"><code>95</code></td>
+<td dir="auto">0-100</td>
+</tr>
+<tr>
+<td dir="ltr"><code>avatarThumbnailsPng</code></td>
+<td dir="ltr">生成 PNG 格式的头像缩略图而不是 JPEG</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>skipContentCheck</code></td>
+<td dir="ltr">跳过新默认内容检查</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>disableChatBackup</code></td>
+<td dir="ltr">禁用自动聊天备份</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>numberOfBackups</code></td>
+<td dir="ltr">要保留的备份数量</td>
+<td dir="auto"><code>50</code></td>
+<td dir="ltr">任何正整数</td>
+</tr>
+<tr>
+<td dir="ltr"><code>chatBackupThrottleInterval</code></td>
+<td dir="ltr">备份节流间隔（毫秒）</td>
+<td dir="auto"><code>10000</code></td>
+<td dir="ltr">任何正整数</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="[[3 扩展功能|扩展配置]]" dir="auto" class="heading" id="[[3_扩展功能|扩展配置]]"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="3 扩展功能" data-href="3 扩展功能" href="sillytavern/3-扩展功能/3-扩展功能.html" class="internal-link" target="_self" rel="noopener nofollow">扩展配置</a></h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>enableExtensions</code></td>
+<td dir="ltr">启用 UI 扩展</td>
+<td dir="ltr"><code>true</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>enableExtensionsAutoUpdate</code></td>
+<td dir="ltr">自动更新扩展</td>
+<td dir="ltr"><code>true</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>enableDownloadableTokenizers</code></td>
+<td dir="ltr">启用按需下载分词器</td>
+<td dir="ltr"><code>true</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>extras.disableAutoDownload</code></td>
+<td dir="ltr">禁用自动下载模型</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>extras.classificationModel</code></td>
+<td dir="ltr">用于分类的 HuggingFace 模型 ID</td>
+<td dir="ltr"><code>"Cohee/distilbert-base-uncased-go-emotions-onnx"</code></td>
+<td dir="ltr">有效的模型 ID</td>
+</tr>
+<tr>
+<td dir="ltr"><code>extras.captioningModel</code></td>
+<td dir="ltr">用于图像描述的 HuggingFace 模型 ID</td>
+<td dir="ltr"><code>"Xenova/vit-gpt2-image-captioning"</code></td>
+<td dir="ltr">有效的模型 ID</td>
+</tr>
+<tr>
+<td dir="ltr"><code>extras.embeddingModel</code></td>
+<td dir="ltr">用于嵌入的 HuggingFace 模型 ID</td>
+<td dir="ltr"><code>"Cohee/jina-embeddings-v2-base-en"</code></td>
+<td dir="ltr">有效的模型 ID</td>
+</tr>
+<tr>
+<td dir="ltr"><code>extras.speechToTextModel</code></td>
+<td dir="ltr">用于语音转文本的 HuggingFace 模型 ID</td>
+<td dir="ltr"><code>"Xenova/whisper-small"</code></td>
+<td dir="ltr">有效的模型 ID</td>
+</tr>
+<tr>
+<td dir="ltr"><code>extras.textToSpeechModel</code></td>
+<td dir="ltr">用于文本转语音的 HuggingFace 模型 ID</td>
+<td dir="ltr"><code>"Xenova/speecht5_tts"</code></td>
+<td dir="ltr">有效的模型 ID</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="[[4.4 服务器插件|服务器插件]]" dir="auto" class="heading" id="[[4.4_服务器插件|服务器插件]]"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="4.4 服务器插件" data-href="4.4 服务器插件" href="sillytavern/4-开发与自动化/4.4-服务器插件.html" class="internal-link" target="_self" rel="noopener nofollow">服务器插件</a></h2><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>enableServerPlugins</code></td>
+<td dir="ltr">启用服务器端插件</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="[[2.5 API 连接|API 集成设置]]" dir="auto" class="heading" id="[[2.5_API_连接|API_集成设置]]"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><a data-tooltip-position="top" aria-label="2.5 API 连接" data-href="2.5 API 连接" href="sillytavern/2-使用指南/2.5-api-连接.html" class="internal-link" target="_self" rel="noopener nofollow">API 集成设置</a></h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="OpenAI 配置" dir="auto" class="heading" id="OpenAI_配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>OpenAI 配置</h3><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>promptPlaceholder</code></td>
+<td dir="ltr">空提示词的默认消息</td>
+<td dir="ltr"><code>"[Start a new chat]"</code></td>
+<td dir="ltr">任何字符串</td>
+</tr>
+<tr>
+<td dir="ltr"><code>openai.randomizeUserId</code></td>
+<td dir="ltr">为 API 调用随机化用户 ID</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr">true, false</td>
+</tr>
+<tr>
+<td dir="ltr"><code>openai.captionSystemPrompt</code></td>
+<td dir="ltr">用于图像描述的系统提示词</td>
+<td dir="auto"><code>""</code></td>
+<td dir="ltr">任何字符串</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="MistralAI 配置" dir="auto" class="heading" id="MistralAI_配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>MistralAI 配置</h3><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>mistral.enablePrefix</code></td>
+<td dir="ltr">启用回复预填充。<strong>前缀将在回复中回显</strong></td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Ollama 配置" dir="auto" class="heading" id="Ollama_配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Ollama 配置</h3><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>ollama.keepAlive</code></td>
+<td dir="ltr">模型保持活跃的持续时间（秒）</td>
+<td dir="auto"><code>-1</code></td>
+<td dir="ltr"><code>-1</code>（无限期），<code>0</code>（立即卸载），正整数</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="Claude 配置" dir="auto" class="heading" id="Claude_配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Claude 配置</h3><div class="heading-children"><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="warning" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></div><div class="callout-title-inner"><strong>重要！</strong></div></div><div class="callout-content">
+<p dir="auto">仅当提示词前缀是静态的且在请求之间不会更改时使用。<code>{{random}}</code> 宏、世界书（World Info）、摘要等可能会使缓存无效，并浪费缓存失效的费用。行为可能不可预测，因此无法提供任何保证。</p>
+<p dir="auto">参见：<a data-tooltip-position="top" aria-label="https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching" rel="noopener nofollow" class="external-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching" target="_blank">提示词缓存</a></p>
+</div></div></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>claude.enableSystemPromptCache</code></td>
+<td dir="ltr">启用系统提示词缓存</td>
+<td dir="ltr"><code>false</code></td>
+<td dir="ltr"><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td dir="ltr"><code>claude.cachingAtDepth</code></td>
+<td dir="ltr">启用消息历史缓存</td>
+<td dir="auto"><code>-1</code></td>
+<td dir="ltr"><code>-1</code>（禁用），<code>0</code> 或正整数</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h3 heading-wrapper"><h3 data-heading="DeepL 配置" dir="auto" class="heading" id="DeepL_配置"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>DeepL 配置</h3><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">设置</th>
+<th dir="ltr">描述</th>
+<th dir="ltr">默认值</th>
+<th dir="ltr">允许的值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr"><code>deepl.formality</code></td>
+<td dir="ltr">翻译的正式程度</td>
+<td dir="ltr"><code>"default"</code></td>
+<td dir="ltr"><code>"default"</code>, <code>"more"</code>, <code>"less"</code>, <code>"prefer_more"</code>, <code>"prefer_less"</code></td>
+</tr>
+</tbody>
+</table></div><div class="mod-footer mod-ui"></div></div></div></div></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#配置文件"><div class="tree-item-contents heading-link" heading-name="配置文件"><span class="tree-item-title">配置文件</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#数据配置"><div class="tree-item-contents heading-link" heading-name="数据配置"><span class="tree-item-title">数据配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#[[5.4_远程连接|网络配置]]"><div class="tree-item-contents heading-link" heading-name="[[5.4 远程连接|网络配置]]"><span class="tree-item-title"><a data-tooltip-position="top" aria-label="5.4 远程连接" data-href="5.4 远程连接" href="5.4 远程连接" class="internal-link" target="_blank" rel="noopener nofollow">网络配置</a></span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#安全配置"><div class="tree-item-contents heading-link" heading-name="安全配置"><span class="tree-item-title">安全配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#[[5.2_多用户模式|用户认证]]"><div class="tree-item-contents heading-link" heading-name="[[5.2 多用户模式|用户认证]]"><span class="tree-item-title"><a data-tooltip-position="top" aria-label="5.2 多用户模式" data-href="5.2 多用户模式" href="5.2 多用户模式" class="internal-link" target="_blank" rel="noopener nofollow">用户认证</a></span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#请求代理配置"><div class="tree-item-contents heading-link" heading-name="请求代理配置"><span class="tree-item-title">请求代理配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#自动运行配置"><div class="tree-item-contents heading-link" heading-name="自动运行配置"><span class="tree-item-title">自动运行配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#高级配置"><div class="tree-item-contents heading-link" heading-name="高级配置"><span class="tree-item-title">高级配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#[[3_扩展功能|扩展配置]]"><div class="tree-item-contents heading-link" heading-name="[[3 扩展功能|扩展配置]]"><span class="tree-item-title"><a data-tooltip-position="top" aria-label="3 扩展功能" data-href="3 扩展功能" href="3 扩展功能" class="internal-link" target="_blank" rel="noopener nofollow">扩展配置</a></span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#[[4.4_服务器插件|服务器插件]]"><div class="tree-item-contents heading-link" heading-name="[[4.4 服务器插件|服务器插件]]"><span class="tree-item-title"><a data-tooltip-position="top" aria-label="4.4 服务器插件" data-href="4.4 服务器插件" href="4.4 服务器插件" class="internal-link" target="_blank" rel="noopener nofollow">服务器插件</a></span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#[[2.5_API_连接|API_集成设置]]"><div class="tree-item-contents heading-link" heading-name="[[2.5 API 连接|API 集成设置]]"><span class="tree-item-title"><a data-tooltip-position="top" aria-label="2.5 API 连接" data-href="2.5 API 连接" href="2.5 API 连接" class="internal-link" target="_blank" rel="noopener nofollow">API 集成设置</a></span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#OpenAI_配置"><div class="tree-item-contents heading-link" heading-name="OpenAI 配置"><span class="tree-item-title">OpenAI 配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#MistralAI_配置"><div class="tree-item-contents heading-link" heading-name="MistralAI 配置"><span class="tree-item-title">MistralAI 配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#Ollama_配置"><div class="tree-item-contents heading-link" heading-name="Ollama 配置"><span class="tree-item-title">Ollama 配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#Claude_配置"><div class="tree-item-contents heading-link" heading-name="Claude 配置"><span class="tree-item-title">Claude 配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="sillytavern\5-管理\5.1-配置文件.html#DeepL_配置"><div class="tree-item-contents heading-link" heading-name="DeepL 配置"><span class="tree-item-title">DeepL 配置</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>

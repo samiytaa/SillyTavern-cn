@@ -1,0 +1,2182 @@
+{
+  "vaultName": "SillyTavern",
+  "lastExport": 1734909315331,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-light show-inline-title show-ribbon",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": true,
+  "files": [
+    "SillyTavern/1-安装/1 安装.md",
+    "SillyTavern/1-安装/1.1 Windows.md",
+    "SillyTavern/1-安装/1.2 Linux 和 Mac.md",
+    "SillyTavern/1-安装/1.3 Android.md",
+    "SillyTavern/1-安装/1.4 Docker.md",
+    "SillyTavern/1-安装/1.5 更新.md",
+    "SillyTavern/1-安装/1.5.1 迁移指南 1.12.0.md",
+    "SillyTavern/1-安装/1.5.2 迁移指南 1.9.0.md",
+    "SillyTavern/1-安装/在Android上使用Termux本地安装和运行SillyTavern.md",
+    "SillyTavern/2-使用指南/2 使用指南.md",
+    "SillyTavern/2-使用指南/2.1 快速入门.md",
+    "SillyTavern/2-使用指南/2.2 常见问题.md",
+    "SillyTavern/2-使用指南/2.3 聊天指南.md",
+    "SillyTavern/2-使用指南/2.3.1 斜杠命令.md",
+    "SillyTavern/2-使用指南/2.3.2 热键.md",
+    "SillyTavern/2-使用指南/2.4 通用设置.md",
+    "SillyTavern/2-使用指南/2.5 API 连接.md",
+    "SillyTavern/2-使用指南/2.5.1 连接配置文件.md",
+    "SillyTavern/2-使用指南/2.5.2 自托管AI模型.md",
+    "SillyTavern/2-使用指南/2.5.3 聊天补全（Chat Completion）.md",
+    "SillyTavern/2-使用指南/2.5.4 OpenRouter.md",
+    "SillyTavern/2-使用指南/2.5.5 DreamGen.md",
+    "SillyTavern/2-使用指南/2.5.6 KoboldAI Horde.md",
+    "SillyTavern/2-使用指南/2.5.7 KoboldCpp.md",
+    "SillyTavern/2-使用指南/2.5.8 Mancer.md",
+    "SillyTavern/2-使用指南/2.5.9 NovelAI.md",
+    "SillyTavern/2-使用指南/2.5.10 Scale.md",
+    "SillyTavern/2-使用指南/2.5.11 TabbyAPI.md",
+    "SillyTavern/2-使用指南/2.6 提示词（Prompt）.md",
+    "SillyTavern/2-使用指南/2.6.1 高级格式化.md",
+    "SillyTavern/2-使用指南/2.6.2 上下文模板.md",
+    "SillyTavern/2-使用指南/2.6.3 指令模式.md",
+    "SillyTavern/2-使用指南/2.6.4 分词器（Tokenizer）.md",
+    "SillyTavern/2-使用指南/2.6.5 CFG.md",
+    "SillyTavern/2-使用指南/2.6.6 提示管理器.md",
+    "SillyTavern/2-使用指南/2.7 世界书（World Info）.md",
+    "SillyTavern/2-使用指南/2.8 用户设置.md",
+    "SillyTavern/2-使用指南/2.8.1 UI 自定义.md",
+    "SillyTavern/2-使用指南/2.8.2 视觉小说 (VN) 模式.md",
+    "SillyTavern/2-使用指南/2.9 角色设置.md",
+    "SillyTavern/2-使用指南/2.9.1 角色设计.md",
+    "SillyTavern/2-使用指南/2.9.2 聊天文件管理.md",
+    "SillyTavern/2-使用指南/2.9.3 群聊.md",
+    "SillyTavern/2-使用指南/2.9.4 标签.md",
+    "SillyTavern/2-使用指南/2.9.5 作者注释.md",
+    "SillyTavern/2-使用指南/2.9.6 数据库（RAG）.md",
+    "SillyTavern/3-扩展功能/3 扩展功能.md",
+    "SillyTavern/3-扩展功能/3.1 Blip.md",
+    "SillyTavern/3-扩展功能/3.2 聊天翻译.md",
+    "SillyTavern/3-扩展功能/3.3 聊天向量化.md",
+    "SillyTavern/3-扩展功能/3.4 动态音频.md",
+    "SillyTavern/3-扩展功能/3.5 EmulatorJS.md",
+    "SillyTavern/3-扩展功能/3.6 表情图像（头像）.md",
+    "SillyTavern/3-扩展功能/3.7 图像描述.md",
+    "SillyTavern/3-扩展功能/3.8 图像生成.md",
+    "SillyTavern/3-扩展功能/3.9 Live2D.md",
+    "SillyTavern/3-扩展功能/3.10 目标功能.md",
+    "SillyTavern/3-扩展功能/3.11 基于检索的语音转换 (RVC).md",
+    "SillyTavern/3-扩展功能/3.12 语音识别.md",
+    "SillyTavern/3-扩展功能/3.13 总结（Summarize）.md",
+    "SillyTavern/3-扩展功能/3.14 文本转语音 (TTS).md",
+    "SillyTavern/3-扩展功能/3.15 AllTalk TTS V2.md",
+    "SillyTavern/3-扩展功能/3.16 XTTS 语音克隆.md",
+    "SillyTavern/3-扩展功能/3.17 VRM.md",
+    "SillyTavern/3-扩展功能/3.18 网页搜索.md",
+    "SillyTavern/3-扩展功能/3.19 Extras.md",
+    "SillyTavern/3-扩展功能/3.19.1 通过 Colab 运行附加功能.md",
+    "SillyTavern/3-扩展功能/3.19.2 本地安装.md",
+    "SillyTavern/3-扩展功能/3.19.2.1 常见问题.md",
+    "SillyTavern/3-扩展功能/3.19.3 智能上下文.md",
+    "SillyTavern/3-扩展功能/3.19.4 TalkingHead.md",
+    "SillyTavern/4-开发与自动化/4 开发与自动化.md",
+    "SillyTavern/4-开发与自动化/4.1 STscript 语言参考.md",
+    "SillyTavern/4-开发与自动化/4.2 函数调用.md",
+    "SillyTavern/4-开发与自动化/4.3 UI 扩展.md",
+    "SillyTavern/4-开发与自动化/4.4 服务器插件.md",
+    "SillyTavern/4-开发与自动化/4.5 国际化 (i18n).md",
+    "SillyTavern/5-管理/5 管理.md",
+    "SillyTavern/5-管理/5.1 配置文件.md",
+    "SillyTavern/5-管理/5.2 多用户模式.md",
+    "SillyTavern/5-管理/5.3 单点登录 (SSO).md",
+    "SillyTavern/5-管理/5.4 远程连接.md",
+    "SillyTavern/5-管理/5.5 VPN 和隧道.md",
+    "SillyTavern/5-管理/5.6 反向代理.md",
+    "SillyTavern/6-许可证与版权.md",
+    "SillyTavern/什么是SillyTavern？.md",
+    "SillyTavern/SillyTavern官网wiki汉化.md",
+    "SillyTavern/SillyTavern设置中文.md",
+    "lib/media/20241222153636433.png",
+    "lib/media/20241222153636434.png",
+    "lib/media/20241222153636435.png",
+    "lib/media/20241222153636436.png",
+    "lib/media/20241222154623641.png",
+    "lib/media/20241222154623642.jpg",
+    "lib/media/20241222154623643.jpg",
+    "lib/media/20241222154623644.jpg",
+    "lib/media/20241222154623645.jpg",
+    "lib/media/20241222154623646.jpg",
+    "lib/media/20241222154623647.jpg",
+    "lib/media/20241222154623648.jpg",
+    "lib/media/20241222154623649.jpg",
+    "lib/media/20241222154623650.jpg",
+    "lib/media/20241222154623651.jpg",
+    "lib/media/20241222154623652.jpg",
+    "lib/media/20241222154623653.jpg",
+    "lib/media/20241222154623654.jpg",
+    "lib/media/20241222154623655.jpg",
+    "lib/media/20241222155106300.png",
+    "lib/media/20241222155106301.png",
+    "lib/media/20241222155106302.png",
+    "lib/media/20241222155106303.png",
+    "lib/media/20241222155106304.png",
+    "lib/media/20241222155106305.png",
+    "lib/media/20241222155558661.png",
+    "lib/media/20241222155558662.png",
+    "lib/media/20241222155558663.png",
+    "lib/media/20241222155558664.png",
+    "lib/media/20241222155558665.png",
+    "lib/media/20241222155558666.png",
+    "lib/media/20241222155558667.png",
+    "lib/media/20241222155558668.png",
+    "lib/media/20241222155558669.png",
+    "lib/media/20241222155558670.png",
+    "lib/media/20241222155558671.png",
+    "lib/media/20241222155558672.png",
+    "lib/media/20241222155558673.png",
+    "lib/media/20241222155558674.png",
+    "lib/media/20241222155719773.png",
+    "lib/media/20241222155216504.png",
+    "lib/media/20241222155216505.png",
+    "lib/media/20241222155748272.png",
+    "lib/media/20241222155748273.png",
+    "lib/media/20241222155815961.png",
+    "lib/media/20241222155815962.png",
+    "lib/media/20241222155815963.png",
+    "lib/media/20241222155815964.png",
+    "lib/media/20241222155836386.png",
+    "lib/media/20241222155858559.png",
+    "lib/media/20241222155858560.jpg",
+    "lib/media/20241222155858561.png",
+    "lib/media/20241222155858562.png",
+    "lib/media/20241222155858563.png",
+    "lib/media/20241222155858564.png",
+    "lib/media/20241222155858565.png",
+    "lib/media/20241222160328301.png",
+    "lib/media/20241222160328302.png",
+    "lib/media/20241222160336015.png",
+    "lib/media/20241222160343571.png",
+    "lib/media/20241222160343573.png",
+    "lib/media/20241222160352040.png",
+    "lib/media/20241222160352041.png",
+    "lib/media/20241222160352042.png",
+    "lib/media/20241222160352043.png",
+    "lib/media/20241222160352044.png",
+    "lib/media/20241222160352045.png",
+    "lib/media/20241222160414677.png",
+    "lib/media/20241222160414678.png",
+    "lib/media/20241222160414679.png",
+    "lib/media/20241222160414680.png",
+    "lib/media/20241222160456665.png",
+    "lib/media/20241222160518232.png",
+    "lib/media/20241222160518233.png",
+    "lib/media/20241222160518234.png",
+    "lib/media/20241222160518235.png",
+    "lib/media/20241222160545021.png",
+    "lib/media/20241222160545022.png",
+    "lib/media/20241222160545023.png",
+    "lib/media/20241222160545024.png",
+    "lib/media/20241222161036860.png",
+    "lib/media/20241222161419896.png",
+    "lib/media/20241222152626046.png",
+    "lib/media/20241222152626047.png",
+    "lib/media/20241222152626048.png",
+    "lib/media/20241222152626049.png",
+    "lib/media/20241222152626050.png",
+    "lib/media/20241222152626051.png",
+    "lib/media/20241222152626052.png",
+    "lib/media/20241222152626053.png",
+    "lib/media/20241222152626054.png",
+    "lib/media/20241222152626055.png",
+    "lib/media/20241222152626057.png",
+    "lib/media/20241222152626058.png",
+    "lib/media/20241222152626059.png",
+    "lib/media/20241222152626060.png",
+    "lib/media/20241222152626061.png",
+    "lib/media/20241222152626062.png",
+    "lib/media/20241222161450739.png",
+    "lib/media/20241222161450740.png",
+    "lib/media/20241222231804174.png",
+    "lib/media/20241222231804175.png",
+    "lib/media/20241222231804176.png",
+    "lib/media/20241222231804178.png",
+    "lib/media/20241222231804179.png",
+    "lib/media/20241222231804180.png",
+    "lib/media/20241222231804181.png",
+    "lib/media/20241222231804182.png",
+    "lib/media/20241222231804183.png",
+    "lib/media/20241222231854728.png",
+    "lib/media/20241222231854729.png",
+    "lib/media/20241222231909807.png",
+    "lib/media/20241222231513272.png",
+    "lib/media/20241222231513274.png",
+    "lib/media/20241222231513275.png",
+    "lib/media/20241222231513276.png",
+    "lib/media/20241222231513277.png",
+    "lib/media/20241222231936121.png",
+    "lib/media/20241222231942905.png",
+    "lib/media/20241222231942906.png",
+    "lib/media/20241222231955466.png",
+    "lib/media/20241222161559033.png",
+    "lib/media/20241222161559034.png",
+    "lib/media/20241222161559035.png",
+    "lib/media/20241222161559036.png",
+    "lib/media/20241222161559037.png",
+    "lib/media/20241222161559038.png",
+    "lib/media/20241222161559039.png",
+    "lib/media/20241222161516881.png",
+    "lib/media/20241222161516873.png",
+    "lib/media/20241222161516874.png",
+    "lib/media/20241222161516875.png",
+    "lib/media/20241222161516876.png",
+    "lib/media/20241222161516878.png",
+    "lib/media/20241222161516879.png",
+    "lib/media/20241222161516880.png",
+    "lib/media/pasted-image-20241223064718.png",
+    "lib/media/20241222151733954.png",
+    "lib/media/20241222152902599.jpg",
+    "lib/media/20241222152902600.jpg",
+    "lib/media/20241222152902601.jpg",
+    "lib/media/20241222152902602.jpg",
+    "lib/media/20241222145931652.png",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.ico",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css"
+  ],
+  "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.ico",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css"
+  ],
+  "fileInfo": {
+    "SillyTavern/1-安装/1 安装.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 679,
+      "exportedPath": "sillytavern/1-安装/1-安装.html",
+      "dependencies": []
+    },
+    "SillyTavern/1-安装/1.1 Windows.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3399,
+      "exportedPath": "sillytavern/1-安装/1.1-windows.html",
+      "dependencies": [
+        "lib/media/20241222153636433.png",
+        "lib/media/20241222153636433.png",
+        "lib/media/20241222153636434.png",
+        "lib/media/20241222153636434.png",
+        "lib/media/20241222153636435.png",
+        "lib/media/20241222153636435.png",
+        "lib/media/20241222153636436.png",
+        "lib/media/20241222153636436.png"
+      ]
+    },
+    "SillyTavern/1-安装/1.2 Linux 和 Mac.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1667,
+      "exportedPath": "sillytavern/1-安装/1.2-linux-和-mac.html",
+      "dependencies": []
+    },
+    "SillyTavern/1-安装/1.3 Android.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 746,
+      "exportedPath": "sillytavern/1-安装/1.3-android.html",
+      "dependencies": []
+    },
+    "SillyTavern/1-安装/1.4 Docker.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 9835,
+      "exportedPath": "sillytavern/1-安装/1.4-docker.html",
+      "dependencies": []
+    },
+    "SillyTavern/1-安装/1.5 更新.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4997,
+      "exportedPath": "sillytavern/1-安装/1.5-更新.html",
+      "dependencies": []
+    },
+    "SillyTavern/1-安装/1.5.1 迁移指南 1.12.0.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 6055,
+      "exportedPath": "sillytavern/1-安装/1.5.1-迁移指南-1.12.0.html",
+      "dependencies": []
+    },
+    "SillyTavern/1-安装/1.5.2 迁移指南 1.9.0.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2028,
+      "exportedPath": "sillytavern/1-安装/1.5.2-迁移指南-1.9.0.html",
+      "dependencies": []
+    },
+    "SillyTavern/1-安装/在Android上使用Termux本地安装和运行SillyTavern.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 13051,
+      "exportedPath": "sillytavern/1-安装/在android上使用termux本地安装和运行sillytavern.html",
+      "dependencies": [
+        "lib/media/20241222154623641.png",
+        "lib/media/20241222154623641.png",
+        "lib/media/20241222154623642.jpg",
+        "lib/media/20241222154623642.jpg",
+        "lib/media/20241222154623643.jpg",
+        "lib/media/20241222154623643.jpg",
+        "lib/media/20241222154623644.jpg",
+        "lib/media/20241222154623644.jpg",
+        "lib/media/20241222154623645.jpg",
+        "lib/media/20241222154623645.jpg",
+        "lib/media/20241222154623646.jpg",
+        "lib/media/20241222154623646.jpg",
+        "lib/media/20241222154623647.jpg",
+        "lib/media/20241222154623647.jpg",
+        "lib/media/20241222154623648.jpg",
+        "lib/media/20241222154623648.jpg",
+        "lib/media/20241222154623649.jpg",
+        "lib/media/20241222154623649.jpg",
+        "lib/media/20241222154623650.jpg",
+        "lib/media/20241222154623650.jpg",
+        "lib/media/20241222154623651.jpg",
+        "lib/media/20241222154623651.jpg",
+        "lib/media/20241222154623652.jpg",
+        "lib/media/20241222154623652.jpg",
+        "lib/media/20241222154623653.jpg",
+        "lib/media/20241222154623653.jpg",
+        "lib/media/20241222154623654.jpg",
+        "lib/media/20241222154623654.jpg",
+        "lib/media/20241222154623655.jpg",
+        "lib/media/20241222154623655.jpg"
+      ]
+    },
+    "SillyTavern/2-使用指南/2 使用指南.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1786,
+      "exportedPath": "sillytavern/2-使用指南/2-使用指南.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.1 快速入门.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2773,
+      "exportedPath": "sillytavern/2-使用指南/2.1-快速入门.html",
+      "dependencies": [
+        "lib/media/20241222155106300.png",
+        "lib/media/20241222155106300.png",
+        "lib/media/20241222155106301.png",
+        "lib/media/20241222155106301.png",
+        "lib/media/20241222155106302.png",
+        "lib/media/20241222155106302.png",
+        "lib/media/20241222155106303.png",
+        "lib/media/20241222155106303.png",
+        "lib/media/20241222155106304.png",
+        "lib/media/20241222155106304.png",
+        "lib/media/20241222155106305.png",
+        "lib/media/20241222155106305.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.2 常见问题.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8850,
+      "exportedPath": "sillytavern/2-使用指南/2.2-常见问题.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.3 聊天指南.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8256,
+      "exportedPath": "sillytavern/2-使用指南/2.3-聊天指南.html",
+      "dependencies": [
+        "lib/media/20241222155558661.png",
+        "lib/media/20241222155558661.png",
+        "lib/media/20241222155558662.png",
+        "lib/media/20241222155558662.png",
+        "lib/media/20241222155558663.png",
+        "lib/media/20241222155558663.png",
+        "lib/media/20241222155558664.png",
+        "lib/media/20241222155558664.png",
+        "lib/media/20241222155558665.png",
+        "lib/media/20241222155558665.png",
+        "lib/media/20241222155558666.png",
+        "lib/media/20241222155558666.png",
+        "lib/media/20241222155558667.png",
+        "lib/media/20241222155558667.png",
+        "lib/media/20241222155558668.png",
+        "lib/media/20241222155558668.png",
+        "lib/media/20241222155558669.png",
+        "lib/media/20241222155558669.png",
+        "lib/media/20241222155558670.png",
+        "lib/media/20241222155558670.png",
+        "lib/media/20241222155558671.png",
+        "lib/media/20241222155558671.png",
+        "lib/media/20241222155558672.png",
+        "lib/media/20241222155558672.png",
+        "lib/media/20241222155558673.png",
+        "lib/media/20241222155558673.png",
+        "lib/media/20241222155558674.png",
+        "lib/media/20241222155558674.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.3.1 斜杠命令.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 745,
+      "exportedPath": "sillytavern/2-使用指南/2.3.1-斜杠命令.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.3.2 热键.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1150,
+      "exportedPath": "sillytavern/2-使用指南/2.3.2-热键.html",
+      "dependencies": [
+        "lib/media/20241222155719773.png",
+        "lib/media/20241222155719773.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.4 通用设置.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4489,
+      "exportedPath": "sillytavern/2-使用指南/2.4-通用设置.html",
+      "dependencies": [
+        "lib/media/20241222155216504.png",
+        "lib/media/20241222155216504.png",
+        "lib/media/20241222155216505.png",
+        "lib/media/20241222155216505.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5 API 连接.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8385,
+      "exportedPath": "sillytavern/2-使用指南/2.5-api-连接.html",
+      "dependencies": [
+        "lib/media/20241222155748272.png",
+        "lib/media/20241222155748272.png",
+        "lib/media/20241222155748273.png",
+        "lib/media/20241222155748273.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.1 连接配置文件.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2907,
+      "exportedPath": "sillytavern/2-使用指南/2.5.1-连接配置文件.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.5.2 自托管AI模型.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4187,
+      "exportedPath": "sillytavern/2-使用指南/2.5.2-自托管ai模型.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.5.3 聊天补全（Chat Completion）.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3877,
+      "exportedPath": "sillytavern/2-使用指南/2.5.3-聊天补全（chat-completion）.html",
+      "dependencies": [
+        "lib/media/20241222155815961.png",
+        "lib/media/20241222155815961.png",
+        "lib/media/20241222155815962.png",
+        "lib/media/20241222155815962.png",
+        "lib/media/20241222155815963.png",
+        "lib/media/20241222155815963.png",
+        "lib/media/20241222155815964.png",
+        "lib/media/20241222155815964.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.4 OpenRouter.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1297,
+      "exportedPath": "sillytavern/2-使用指南/2.5.4-openrouter.html",
+      "dependencies": [
+        "lib/media/20241222155836386.png",
+        "lib/media/20241222155836386.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.5 DreamGen.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8260,
+      "exportedPath": "sillytavern/2-使用指南/2.5.5-dreamgen.html",
+      "dependencies": [
+        "lib/media/20241222155858559.png",
+        "lib/media/20241222155858559.png",
+        "lib/media/20241222155858560.jpg",
+        "lib/media/20241222155858560.jpg",
+        "lib/media/20241222155858561.png",
+        "lib/media/20241222155858561.png",
+        "lib/media/20241222155858562.png",
+        "lib/media/20241222155858562.png",
+        "lib/media/20241222155858563.png",
+        "lib/media/20241222155858563.png",
+        "lib/media/20241222155858564.png",
+        "lib/media/20241222155858564.png",
+        "lib/media/20241222155858565.png",
+        "lib/media/20241222155858565.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.6 KoboldAI Horde.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2838,
+      "exportedPath": "sillytavern/2-使用指南/2.5.6-koboldai-horde.html",
+      "dependencies": [
+        "lib/media/20241222160328301.png",
+        "lib/media/20241222160328301.png",
+        "lib/media/20241222160328302.png",
+        "lib/media/20241222160328302.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.7 KoboldCpp.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4401,
+      "exportedPath": "sillytavern/2-使用指南/2.5.7-koboldcpp.html",
+      "dependencies": [
+        "lib/media/20241222160336015.png",
+        "lib/media/20241222160336015.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.8 Mancer.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1334,
+      "exportedPath": "sillytavern/2-使用指南/2.5.8-mancer.html",
+      "dependencies": [
+        "lib/media/20241222160343571.png",
+        "lib/media/20241222160343571.png",
+        "lib/media/20241222160343573.png",
+        "lib/media/20241222160343573.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.9 NovelAI.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 11810,
+      "exportedPath": "sillytavern/2-使用指南/2.5.9-novelai.html",
+      "dependencies": [
+        "lib/media/20241222160352040.png",
+        "lib/media/20241222160352040.png",
+        "lib/media/20241222160352041.png",
+        "lib/media/20241222160352041.png",
+        "lib/media/20241222160352042.png",
+        "lib/media/20241222160352042.png",
+        "lib/media/20241222160352043.png",
+        "lib/media/20241222160352043.png",
+        "lib/media/20241222160352044.png",
+        "lib/media/20241222160352044.png",
+        "lib/media/20241222160352045.png",
+        "lib/media/20241222160352045.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.5.10 Scale.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1431,
+      "exportedPath": "sillytavern/2-使用指南/2.5.10-scale.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.5.11 TabbyAPI.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2485,
+      "exportedPath": "sillytavern/2-使用指南/2.5.11-tabbyapi.html",
+      "dependencies": [
+        "lib/media/20241222160414677.png",
+        "lib/media/20241222160414677.png",
+        "lib/media/20241222160414678.png",
+        "lib/media/20241222160414678.png",
+        "lib/media/20241222160414679.png",
+        "lib/media/20241222160414679.png",
+        "lib/media/20241222160414680.png",
+        "lib/media/20241222160414680.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.6 提示词（Prompt）.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 11053,
+      "exportedPath": "sillytavern/2-使用指南/2.6-提示词（prompt）.html",
+      "dependencies": [
+        "lib/media/20241222160456665.png",
+        "lib/media/20241222160456665.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.6.1 高级格式化.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4030,
+      "exportedPath": "sillytavern/2-使用指南/2.6.1-高级格式化.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.6.2 上下文模板.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3029,
+      "exportedPath": "sillytavern/2-使用指南/2.6.2-上下文模板.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.6.3 指令模式.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5571,
+      "exportedPath": "sillytavern/2-使用指南/2.6.3-指令模式.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.6.4 分词器（Tokenizer）.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4443,
+      "exportedPath": "sillytavern/2-使用指南/2.6.4-分词器（tokenizer）.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.6.5 CFG.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5934,
+      "exportedPath": "sillytavern/2-使用指南/2.6.5-cfg.html",
+      "dependencies": [
+        "lib/media/20241222160518232.png",
+        "lib/media/20241222160518232.png",
+        "lib/media/20241222160518233.png",
+        "lib/media/20241222160518233.png",
+        "lib/media/20241222160518234.png",
+        "lib/media/20241222160518234.png",
+        "lib/media/20241222160518235.png",
+        "lib/media/20241222160518235.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.6.6 提示管理器.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 515,
+      "exportedPath": "sillytavern/2-使用指南/2.6.6-提示管理器.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.7 世界书（World Info）.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 20080,
+      "exportedPath": "sillytavern/2-使用指南/2.7-世界书（world-info）.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.8 用户设置.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 11736,
+      "exportedPath": "sillytavern/2-使用指南/2.8-用户设置.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.8.1 UI 自定义.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4000,
+      "exportedPath": "sillytavern/2-使用指南/2.8.1-ui-自定义.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.8.2 视觉小说 (VN) 模式.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2938,
+      "exportedPath": "sillytavern/2-使用指南/2.8.2-视觉小说-(vn)-模式.html",
+      "dependencies": [
+        "lib/media/20241222160545021.png",
+        "lib/media/20241222160545021.png",
+        "lib/media/20241222160545022.png",
+        "lib/media/20241222160545022.png",
+        "lib/media/20241222160545023.png",
+        "lib/media/20241222160545023.png",
+        "lib/media/20241222160545024.png",
+        "lib/media/20241222160545024.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.9 角色设置.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3441,
+      "exportedPath": "sillytavern/2-使用指南/2.9-角色设置.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.9.1 角色设计.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 9533,
+      "exportedPath": "sillytavern/2-使用指南/2.9.1-角色设计.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.9.2 聊天文件管理.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2792,
+      "exportedPath": "sillytavern/2-使用指南/2.9.2-聊天文件管理.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.9.3 群聊.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4925,
+      "exportedPath": "sillytavern/2-使用指南/2.9.3-群聊.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.9.4 标签.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4253,
+      "exportedPath": "sillytavern/2-使用指南/2.9.4-标签.html",
+      "dependencies": []
+    },
+    "SillyTavern/2-使用指南/2.9.5 作者注释.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2092,
+      "exportedPath": "sillytavern/2-使用指南/2.9.5-作者注释.html",
+      "dependencies": [
+        "lib/media/20241222161036860.png",
+        "lib/media/20241222161036860.png",
+        "lib/media/20241222161419896.png",
+        "lib/media/20241222161419896.png"
+      ]
+    },
+    "SillyTavern/2-使用指南/2.9.6 数据库（RAG）.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 11710,
+      "exportedPath": "sillytavern/2-使用指南/2.9.6-数据库（rag）.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3 扩展功能.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 7263,
+      "exportedPath": "sillytavern/3-扩展功能/3-扩展功能.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.1 Blip.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2935,
+      "exportedPath": "sillytavern/3-扩展功能/3.1-blip.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.2 聊天翻译.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 10144,
+      "exportedPath": "sillytavern/3-扩展功能/3.2-聊天翻译.html",
+      "dependencies": [
+        "lib/media/20241222152626046.png",
+        "lib/media/20241222152626046.png",
+        "lib/media/20241222152626047.png",
+        "lib/media/20241222152626047.png",
+        "lib/media/20241222152626048.png",
+        "lib/media/20241222152626048.png",
+        "lib/media/20241222152626049.png",
+        "lib/media/20241222152626049.png",
+        "lib/media/20241222152626050.png",
+        "lib/media/20241222152626050.png",
+        "lib/media/20241222152626051.png",
+        "lib/media/20241222152626051.png",
+        "lib/media/20241222152626052.png",
+        "lib/media/20241222152626052.png",
+        "lib/media/20241222152626053.png",
+        "lib/media/20241222152626053.png",
+        "lib/media/20241222152626054.png",
+        "lib/media/20241222152626054.png",
+        "lib/media/20241222152626055.png",
+        "lib/media/20241222152626055.png",
+        "lib/media/20241222152626057.png",
+        "lib/media/20241222152626057.png",
+        "lib/media/20241222152626058.png",
+        "lib/media/20241222152626058.png",
+        "lib/media/20241222152626059.png",
+        "lib/media/20241222152626059.png",
+        "lib/media/20241222152626060.png",
+        "lib/media/20241222152626060.png",
+        "lib/media/20241222152626061.png",
+        "lib/media/20241222152626061.png",
+        "lib/media/20241222152626062.png",
+        "lib/media/20241222152626062.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.3 聊天向量化.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 7194,
+      "exportedPath": "sillytavern/3-扩展功能/3.3-聊天向量化.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.4 动态音频.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3853,
+      "exportedPath": "sillytavern/3-扩展功能/3.4-动态音频.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.5 EmulatorJS.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3924,
+      "exportedPath": "sillytavern/3-扩展功能/3.5-emulatorjs.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.6 表情图像（头像）.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 6426,
+      "exportedPath": "sillytavern/3-扩展功能/3.6-表情图像（头像）.html",
+      "dependencies": [
+        "lib/media/20241222161450739.png",
+        "lib/media/20241222161450739.png",
+        "lib/media/20241222161450740.png",
+        "lib/media/20241222161450740.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.7 图像描述.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 11143,
+      "exportedPath": "sillytavern/3-扩展功能/3.7-图像描述.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.8 图像生成.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 13779,
+      "exportedPath": "sillytavern/3-扩展功能/3.8-图像生成.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.9 Live2D.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 7737,
+      "exportedPath": "sillytavern/3-扩展功能/3.9-live2d.html",
+      "dependencies": [
+        "lib/media/20241222231804174.png",
+        "lib/media/20241222231804174.png",
+        "lib/media/20241222231804175.png",
+        "lib/media/20241222231804175.png",
+        "lib/media/20241222231804176.png",
+        "lib/media/20241222231804176.png",
+        "lib/media/20241222231804178.png",
+        "lib/media/20241222231804178.png",
+        "lib/media/20241222231804179.png",
+        "lib/media/20241222231804179.png",
+        "lib/media/20241222231804180.png",
+        "lib/media/20241222231804180.png",
+        "lib/media/20241222231804181.png",
+        "lib/media/20241222231804181.png",
+        "lib/media/20241222231804182.png",
+        "lib/media/20241222231804182.png",
+        "lib/media/20241222231804183.png",
+        "lib/media/20241222231804183.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.10 目标功能.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5614,
+      "exportedPath": "sillytavern/3-扩展功能/3.10-目标功能.html",
+      "dependencies": [
+        "lib/media/20241222231854728.png",
+        "lib/media/20241222231854728.png",
+        "lib/media/20241222231854729.png",
+        "lib/media/20241222231854729.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.11 基于检索的语音转换 (RVC).md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8749,
+      "exportedPath": "sillytavern/3-扩展功能/3.11-基于检索的语音转换-(rvc).html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.12 语音识别.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3352,
+      "exportedPath": "sillytavern/3-扩展功能/3.12-语音识别.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.13 总结（Summarize）.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 6461,
+      "exportedPath": "sillytavern/3-扩展功能/3.13-总结（summarize）.html",
+      "dependencies": [
+        "lib/media/20241222231909807.png",
+        "lib/media/20241222231909807.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.14 文本转语音 (TTS).md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5102,
+      "exportedPath": "sillytavern/3-扩展功能/3.14-文本转语音-(tts).html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.15 AllTalk TTS V2.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3739,
+      "exportedPath": "sillytavern/3-扩展功能/3.15-alltalk-tts-v2.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.16 XTTS 语音克隆.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4843,
+      "exportedPath": "sillytavern/3-扩展功能/3.16-xtts-语音克隆.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.17 VRM.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 10519,
+      "exportedPath": "sillytavern/3-扩展功能/3.17-vrm.html",
+      "dependencies": [
+        "lib/media/20241222231513272.png",
+        "lib/media/20241222231513272.png",
+        "lib/media/20241222231513274.png",
+        "lib/media/20241222231513274.png",
+        "lib/media/20241222231513275.png",
+        "lib/media/20241222231513275.png",
+        "lib/media/20241222231513276.png",
+        "lib/media/20241222231513276.png",
+        "lib/media/20241222231513277.png",
+        "lib/media/20241222231513277.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.18 网页搜索.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5957,
+      "exportedPath": "sillytavern/3-扩展功能/3.18-网页搜索.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.19 Extras.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 432,
+      "exportedPath": "sillytavern/3-扩展功能/3.19-extras.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.19.1 通过 Colab 运行附加功能.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1847,
+      "exportedPath": "sillytavern/3-扩展功能/3.19.1-通过-colab-运行附加功能.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.19.2 本地安装.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 7288,
+      "exportedPath": "sillytavern/3-扩展功能/3.19.2-本地安装.html",
+      "dependencies": []
+    },
+    "SillyTavern/3-扩展功能/3.19.2.1 常见问题.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3571,
+      "exportedPath": "sillytavern/3-扩展功能/3.19.2.1-常见问题.html",
+      "dependencies": [
+        "lib/media/20241222231936121.png",
+        "lib/media/20241222231936121.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.19.3 智能上下文.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8265,
+      "exportedPath": "sillytavern/3-扩展功能/3.19.3-智能上下文.html",
+      "dependencies": [
+        "lib/media/20241222231942905.png",
+        "lib/media/20241222231942905.png",
+        "lib/media/20241222231942906.png",
+        "lib/media/20241222231942906.png"
+      ]
+    },
+    "SillyTavern/3-扩展功能/3.19.4 TalkingHead.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5808,
+      "exportedPath": "sillytavern/3-扩展功能/3.19.4-talkinghead.html",
+      "dependencies": [
+        "lib/media/20241222231955466.png",
+        "lib/media/20241222231955466.png"
+      ]
+    },
+    "SillyTavern/4-开发与自动化/4 开发与自动化.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 896,
+      "exportedPath": "sillytavern/4-开发与自动化/4-开发与自动化.html",
+      "dependencies": []
+    },
+    "SillyTavern/4-开发与自动化/4.1 STscript 语言参考.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 46623,
+      "exportedPath": "sillytavern/4-开发与自动化/4.1-stscript-语言参考.html",
+      "dependencies": [
+        "lib/media/20241222161559033.png",
+        "lib/media/20241222161559033.png",
+        "lib/media/20241222161559034.png",
+        "lib/media/20241222161559034.png",
+        "lib/media/20241222161559035.png",
+        "lib/media/20241222161559035.png",
+        "lib/media/20241222161559036.png",
+        "lib/media/20241222161559036.png",
+        "lib/media/20241222161559037.png",
+        "lib/media/20241222161559037.png",
+        "lib/media/20241222161559038.png",
+        "lib/media/20241222161559038.png",
+        "lib/media/20241222161559039.png",
+        "lib/media/20241222161559039.png"
+      ]
+    },
+    "SillyTavern/4-开发与自动化/4.2 函数调用.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4900,
+      "exportedPath": "sillytavern/4-开发与自动化/4.2-函数调用.html",
+      "dependencies": []
+    },
+    "SillyTavern/4-开发与自动化/4.3 UI 扩展.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8807,
+      "exportedPath": "sillytavern/4-开发与自动化/4.3-ui-扩展.html",
+      "dependencies": []
+    },
+    "SillyTavern/4-开发与自动化/4.4 服务器插件.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3036,
+      "exportedPath": "sillytavern/4-开发与自动化/4.4-服务器插件.html",
+      "dependencies": []
+    },
+    "SillyTavern/4-开发与自动化/4.5 国际化 (i18n).md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 16973,
+      "exportedPath": "sillytavern/4-开发与自动化/4.5-国际化-(i18n).html",
+      "dependencies": [
+        "lib/media/20241222161516881.png",
+        "lib/media/20241222161516881.png",
+        "lib/media/20241222161516873.png",
+        "lib/media/20241222161516873.png",
+        "lib/media/20241222161516874.png",
+        "lib/media/20241222161516874.png",
+        "lib/media/20241222161516875.png",
+        "lib/media/20241222161516875.png",
+        "lib/media/20241222161516876.png",
+        "lib/media/20241222161516876.png",
+        "lib/media/20241222161516874.png",
+        "lib/media/20241222161516874.png",
+        "lib/media/20241222161516878.png",
+        "lib/media/20241222161516878.png",
+        "lib/media/20241222161516879.png",
+        "lib/media/20241222161516879.png",
+        "lib/media/20241222161516880.png",
+        "lib/media/20241222161516880.png"
+      ]
+    },
+    "SillyTavern/5-管理/5 管理.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2690,
+      "exportedPath": "sillytavern/5-管理/5-管理.html",
+      "dependencies": []
+    },
+    "SillyTavern/5-管理/5.1 配置文件.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 12948,
+      "exportedPath": "sillytavern/5-管理/5.1-配置文件.html",
+      "dependencies": []
+    },
+    "SillyTavern/5-管理/5.2 多用户模式.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3550,
+      "exportedPath": "sillytavern/5-管理/5.2-多用户模式.html",
+      "dependencies": []
+    },
+    "SillyTavern/5-管理/5.3 单点登录 (SSO).md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1435,
+      "exportedPath": "sillytavern/5-管理/5.3-单点登录-(sso).html",
+      "dependencies": []
+    },
+    "SillyTavern/5-管理/5.4 远程连接.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 8463,
+      "exportedPath": "sillytavern/5-管理/5.4-远程连接.html",
+      "dependencies": []
+    },
+    "SillyTavern/5-管理/5.5 VPN 和隧道.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 4260,
+      "exportedPath": "sillytavern/5-管理/5.5-vpn-和隧道.html",
+      "dependencies": []
+    },
+    "SillyTavern/5-管理/5.6 反向代理.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 12770,
+      "exportedPath": "sillytavern/5-管理/5.6-反向代理.html",
+      "dependencies": []
+    },
+    "SillyTavern/6-许可证与版权.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 929,
+      "exportedPath": "sillytavern/6-许可证与版权.html",
+      "dependencies": []
+    },
+    "SillyTavern/什么是SillyTavern？.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5968,
+      "exportedPath": "sillytavern/什么是sillytavern？.html",
+      "dependencies": [
+        "lib/media/pasted-image-20241223064718.png",
+        "lib/media/20241222151733954.png",
+        "lib/media/20241222151733954.png",
+        "lib/media/20241222152902599.jpg",
+        "lib/media/20241222152902599.jpg",
+        "lib/media/20241222152902600.jpg",
+        "lib/media/20241222152902600.jpg",
+        "lib/media/20241222152902601.jpg",
+        "lib/media/20241222152902601.jpg",
+        "lib/media/20241222152902602.jpg",
+        "lib/media/20241222152902602.jpg"
+      ]
+    },
+    "SillyTavern/SillyTavern官网wiki汉化.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 857,
+      "exportedPath": "sillytavern/sillytavern官网wiki汉化.html",
+      "dependencies": []
+    },
+    "SillyTavern/SillyTavern设置中文.md": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 104,
+      "exportedPath": "sillytavern/sillytavern设置中文.html",
+      "dependencies": [
+        "lib/media/20241222145931652.png",
+        "lib/media/20241222145931652.png"
+      ]
+    },
+    "lib/media/20241222153636433.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 36357,
+      "exportedPath": "lib/media/20241222153636433.png",
+      "dependencies": []
+    },
+    "lib/media/20241222153636434.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 29895,
+      "exportedPath": "lib/media/20241222153636434.png",
+      "dependencies": []
+    },
+    "lib/media/20241222153636435.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 25028,
+      "exportedPath": "lib/media/20241222153636435.png",
+      "dependencies": []
+    },
+    "lib/media/20241222153636436.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 25160,
+      "exportedPath": "lib/media/20241222153636436.png",
+      "dependencies": []
+    },
+    "lib/media/20241222154623641.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 191829,
+      "exportedPath": "lib/media/20241222154623641.png",
+      "dependencies": []
+    },
+    "lib/media/20241222154623642.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 58656,
+      "exportedPath": "lib/media/20241222154623642.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623643.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 103546,
+      "exportedPath": "lib/media/20241222154623643.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623644.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 130007,
+      "exportedPath": "lib/media/20241222154623644.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623645.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 94692,
+      "exportedPath": "lib/media/20241222154623645.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623646.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 124231,
+      "exportedPath": "lib/media/20241222154623646.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623647.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 74327,
+      "exportedPath": "lib/media/20241222154623647.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623648.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 83354,
+      "exportedPath": "lib/media/20241222154623648.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623649.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 247040,
+      "exportedPath": "lib/media/20241222154623649.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623650.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 83829,
+      "exportedPath": "lib/media/20241222154623650.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623651.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 39584,
+      "exportedPath": "lib/media/20241222154623651.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623652.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 49309,
+      "exportedPath": "lib/media/20241222154623652.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623653.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 57534,
+      "exportedPath": "lib/media/20241222154623653.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623654.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 238019,
+      "exportedPath": "lib/media/20241222154623654.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222154623655.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 29337,
+      "exportedPath": "lib/media/20241222154623655.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222155106300.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 18598,
+      "exportedPath": "lib/media/20241222155106300.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155106301.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 39384,
+      "exportedPath": "lib/media/20241222155106301.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155106302.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 79569,
+      "exportedPath": "lib/media/20241222155106302.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155106303.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 489059,
+      "exportedPath": "lib/media/20241222155106303.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155106304.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 17625,
+      "exportedPath": "lib/media/20241222155106304.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155106305.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 163462,
+      "exportedPath": "lib/media/20241222155106305.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558661.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 28488,
+      "exportedPath": "lib/media/20241222155558661.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558662.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 96206,
+      "exportedPath": "lib/media/20241222155558662.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558663.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 94711,
+      "exportedPath": "lib/media/20241222155558663.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558664.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 158237,
+      "exportedPath": "lib/media/20241222155558664.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558665.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 58897,
+      "exportedPath": "lib/media/20241222155558665.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558666.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 212865,
+      "exportedPath": "lib/media/20241222155558666.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558667.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 20723,
+      "exportedPath": "lib/media/20241222155558667.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558668.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 154430,
+      "exportedPath": "lib/media/20241222155558668.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558669.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 144908,
+      "exportedPath": "lib/media/20241222155558669.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558670.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 65265,
+      "exportedPath": "lib/media/20241222155558670.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558671.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 751970,
+      "exportedPath": "lib/media/20241222155558671.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558672.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 751683,
+      "exportedPath": "lib/media/20241222155558672.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558673.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 46500,
+      "exportedPath": "lib/media/20241222155558673.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155558674.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 230851,
+      "exportedPath": "lib/media/20241222155558674.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155719773.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1104912,
+      "exportedPath": "lib/media/20241222155719773.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155216504.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1842275,
+      "exportedPath": "lib/media/20241222155216504.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155216505.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 88567,
+      "exportedPath": "lib/media/20241222155216505.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155748272.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 173755,
+      "exportedPath": "lib/media/20241222155748272.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155748273.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 202556,
+      "exportedPath": "lib/media/20241222155748273.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155815961.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 616827,
+      "exportedPath": "lib/media/20241222155815961.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155815962.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 189050,
+      "exportedPath": "lib/media/20241222155815962.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155815963.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 233859,
+      "exportedPath": "lib/media/20241222155815963.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155815964.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 229816,
+      "exportedPath": "lib/media/20241222155815964.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155836386.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 112786,
+      "exportedPath": "lib/media/20241222155836386.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155858559.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 136738,
+      "exportedPath": "lib/media/20241222155858559.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155858560.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 59651,
+      "exportedPath": "lib/media/20241222155858560.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222155858561.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 124017,
+      "exportedPath": "lib/media/20241222155858561.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155858562.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 559434,
+      "exportedPath": "lib/media/20241222155858562.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155858563.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 453931,
+      "exportedPath": "lib/media/20241222155858563.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155858564.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2320113,
+      "exportedPath": "lib/media/20241222155858564.png",
+      "dependencies": []
+    },
+    "lib/media/20241222155858565.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 547442,
+      "exportedPath": "lib/media/20241222155858565.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160328301.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 62835,
+      "exportedPath": "lib/media/20241222160328301.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160328302.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 168698,
+      "exportedPath": "lib/media/20241222160328302.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160336015.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 26061,
+      "exportedPath": "lib/media/20241222160336015.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160343571.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 40045,
+      "exportedPath": "lib/media/20241222160343571.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160343573.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 40056,
+      "exportedPath": "lib/media/20241222160343573.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160352040.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 6664,
+      "exportedPath": "lib/media/20241222160352040.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160352041.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 9811,
+      "exportedPath": "lib/media/20241222160352041.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160352042.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 22162,
+      "exportedPath": "lib/media/20241222160352042.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160352043.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 24502,
+      "exportedPath": "lib/media/20241222160352043.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160352044.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 616118,
+      "exportedPath": "lib/media/20241222160352044.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160352045.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 460765,
+      "exportedPath": "lib/media/20241222160352045.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160414677.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 52630,
+      "exportedPath": "lib/media/20241222160414677.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160414678.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 17192,
+      "exportedPath": "lib/media/20241222160414678.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160414679.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 27274,
+      "exportedPath": "lib/media/20241222160414679.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160414680.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 29834,
+      "exportedPath": "lib/media/20241222160414680.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160456665.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 465426,
+      "exportedPath": "lib/media/20241222160456665.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160518232.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 30112,
+      "exportedPath": "lib/media/20241222160518232.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160518233.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 59026,
+      "exportedPath": "lib/media/20241222160518233.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160518234.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 59672,
+      "exportedPath": "lib/media/20241222160518234.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160518235.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2071,
+      "exportedPath": "lib/media/20241222160518235.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160545021.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 612948,
+      "exportedPath": "lib/media/20241222160545021.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160545022.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 2750445,
+      "exportedPath": "lib/media/20241222160545022.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160545023.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3164581,
+      "exportedPath": "lib/media/20241222160545023.png",
+      "dependencies": []
+    },
+    "lib/media/20241222160545024.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3137047,
+      "exportedPath": "lib/media/20241222160545024.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161036860.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 70150,
+      "exportedPath": "lib/media/20241222161036860.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161419896.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 154106,
+      "exportedPath": "lib/media/20241222161419896.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626046.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 75560,
+      "exportedPath": "lib/media/20241222152626046.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626047.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 47694,
+      "exportedPath": "lib/media/20241222152626047.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626048.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 49142,
+      "exportedPath": "lib/media/20241222152626048.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626049.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 63207,
+      "exportedPath": "lib/media/20241222152626049.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626050.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 47147,
+      "exportedPath": "lib/media/20241222152626050.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626051.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 52798,
+      "exportedPath": "lib/media/20241222152626051.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626052.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 15657,
+      "exportedPath": "lib/media/20241222152626052.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626053.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 28118,
+      "exportedPath": "lib/media/20241222152626053.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626054.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 70988,
+      "exportedPath": "lib/media/20241222152626054.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626055.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 87065,
+      "exportedPath": "lib/media/20241222152626055.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626057.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 30082,
+      "exportedPath": "lib/media/20241222152626057.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626058.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 28550,
+      "exportedPath": "lib/media/20241222152626058.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626059.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 84184,
+      "exportedPath": "lib/media/20241222152626059.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626060.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 88054,
+      "exportedPath": "lib/media/20241222152626060.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626061.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 84859,
+      "exportedPath": "lib/media/20241222152626061.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152626062.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 85748,
+      "exportedPath": "lib/media/20241222152626062.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161450739.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 147083,
+      "exportedPath": "lib/media/20241222161450739.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161450740.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 9501,
+      "exportedPath": "lib/media/20241222161450740.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804174.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 3630,
+      "exportedPath": "lib/media/20241222231804174.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804175.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5764,
+      "exportedPath": "lib/media/20241222231804175.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804176.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 126027,
+      "exportedPath": "lib/media/20241222231804176.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804178.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 71563,
+      "exportedPath": "lib/media/20241222231804178.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804179.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 175806,
+      "exportedPath": "lib/media/20241222231804179.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804180.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 128131,
+      "exportedPath": "lib/media/20241222231804180.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804181.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 120677,
+      "exportedPath": "lib/media/20241222231804181.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804182.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 212322,
+      "exportedPath": "lib/media/20241222231804182.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231804183.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 141039,
+      "exportedPath": "lib/media/20241222231804183.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231854728.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 189836,
+      "exportedPath": "lib/media/20241222231854728.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231854729.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 25933,
+      "exportedPath": "lib/media/20241222231854729.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231909807.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 234088,
+      "exportedPath": "lib/media/20241222231909807.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231513272.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 68519,
+      "exportedPath": "lib/media/20241222231513272.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231513274.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 56174,
+      "exportedPath": "lib/media/20241222231513274.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231513275.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 209617,
+      "exportedPath": "lib/media/20241222231513275.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231513276.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 115235,
+      "exportedPath": "lib/media/20241222231513276.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231513277.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 119182,
+      "exportedPath": "lib/media/20241222231513277.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231936121.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 9590,
+      "exportedPath": "lib/media/20241222231936121.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231942905.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1745,
+      "exportedPath": "lib/media/20241222231942905.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231942906.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 175661,
+      "exportedPath": "lib/media/20241222231942906.png",
+      "dependencies": []
+    },
+    "lib/media/20241222231955466.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 174384,
+      "exportedPath": "lib/media/20241222231955466.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161559033.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 86953,
+      "exportedPath": "lib/media/20241222161559033.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161559034.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 58604,
+      "exportedPath": "lib/media/20241222161559034.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161559035.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 87059,
+      "exportedPath": "lib/media/20241222161559035.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161559036.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 67713,
+      "exportedPath": "lib/media/20241222161559036.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161559037.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 123167,
+      "exportedPath": "lib/media/20241222161559037.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161559038.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 73548,
+      "exportedPath": "lib/media/20241222161559038.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161559039.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 85414,
+      "exportedPath": "lib/media/20241222161559039.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516881.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 86437,
+      "exportedPath": "lib/media/20241222161516881.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516873.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 172947,
+      "exportedPath": "lib/media/20241222161516873.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516874.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 83509,
+      "exportedPath": "lib/media/20241222161516874.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516875.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 78371,
+      "exportedPath": "lib/media/20241222161516875.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516876.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 85177,
+      "exportedPath": "lib/media/20241222161516876.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516878.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 109967,
+      "exportedPath": "lib/media/20241222161516878.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516879.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 188218,
+      "exportedPath": "lib/media/20241222161516879.png",
+      "dependencies": []
+    },
+    "lib/media/20241222161516880.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 124459,
+      "exportedPath": "lib/media/20241222161516880.png",
+      "dependencies": []
+    },
+    "lib/media/pasted-image-20241223064718.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 10248,
+      "exportedPath": "lib/media/pasted-image-20241223064718.png",
+      "dependencies": []
+    },
+    "lib/media/20241222151733954.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 92652,
+      "exportedPath": "lib/media/20241222151733954.png",
+      "dependencies": []
+    },
+    "lib/media/20241222152902599.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 254144,
+      "exportedPath": "lib/media/20241222152902599.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222152902600.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 347421,
+      "exportedPath": "lib/media/20241222152902600.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222152902601.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 357453,
+      "exportedPath": "lib/media/20241222152902601.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222152902602.jpg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 488862,
+      "exportedPath": "lib/media/20241222152902602.jpg",
+      "dependencies": []
+    },
+    "lib/media/20241222145931652.png": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 224984,
+      "exportedPath": "lib/media/20241222145931652.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 33906,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.ico": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 15086,
+      "exportedPath": "lib/media/favicon.ico",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 7468,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 131021,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/theme.css": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 1596996,
+      "exportedPath": "lib/styles/theme.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 418,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1734909315331,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    }
+  }
+}
